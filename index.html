@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="design.css" />
+<title>Welcome to 'website_name'!</title>
+<link rel="stylesheet" href="css/basic-jquery-slider.css">
+<script src="js/libs/jquery-1.6.2.min.js"></script>
+<script src="js/basic-jquery-slider.js"></script>    
+<script>
+$(document).ready(function() {
+$('#banner').bjqs({
+'animation' : 'slide',
+'width' : 1000,
+'height' : 373
+});
+});
+</script>
+<script>
+	function search_validity()
+	{
+		var search_name=document.getElementById("text").value;
+		alert(search_name);
+		if (search_name=="")
+			alert("Search field is empty! Enter place or hotel.");
+	}
+</script>
+</head>
+
+<body>
+<div class="main_body">
+<div class="header">
+<div class="logo">COMPANY NAME</div>
+<div class="search">
+	<form action="destination.php" method="post">
+    <input type="text" name="text"  size="40" placeholder=" What are you looking for?" />
+    <input type="image" src="images/go_button.jpg" name="submit" value="Go" class="search_button"/>
+    </form>
+</div>
+</div>
+<div class="menu1">
+	<ul class="menubar1">
+    	<li><a href="aboutus.html" class="menulink" >About Us</a></li>
+        <li><a href="properties.html" class="menulink" >Location of Properties</a></li>
+        <li><a href="currentoffers.html" class="menulink" >Current Offers</a><li>
+        <li><a href="futureprojects.html" class="menulink">Future Projects</a></li>
+        <li><a href="traveldesk.html" class="menulink">Travel Desk</a></li>
+        <li><a href="contactus.html" class="menulink">Contact Us</a></li>
+    </ul>
+</div>
+<div class="banner1">
+<div id="banner" style="margin-top:0px;">
+<!-- start Basic Jquery Slider -->
+<ul class="bjqs">
+  <li><a href="#"><img src="images1/banner6.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_1.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_2.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_3.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_4.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_5.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_6.jpg" width="1000" height="370" ></a></li>
+  <li><a href="#"><img src="images1/banner_7.png" width="1000" height="370" ></a></li>
+</ul>
+<!-- end Basic jQuery Slider -->
+</div>
+</div>
+<div class="aboutus">
+<div class="about_text">
+	<h2>About Company</h2>
+    <p class="desc">Lorem Ipsum is simply a dummy text of the printing and typesetting industry.Lorem Ipsum has been industry's standard dummy text ever since                     the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five  
+    				centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <p class="desc"><a href="aboutus.html" class="readmore">Read More...</a></p>  				
+</div>
+</div>
+<div class="thumbnail_heading">HOTELS & RESORTS</div>
+<div class="thumbnail">
+	<ul class="menu_image">
+    	<li class="menu_image_li"><a href="hotel1.html"><img src="images/hotel1.jpg" class="menu_image_link"/></a><br />Hotel name and place</li>
+        <li class="menu_image_li"><a href="hotel2.html"><img src="images/hotel2.jpg" class="menu_image_link"/></a><br />Hotel name and place</li>
+        <li class="menu_image_li"><a href="hotel3.html"><img src="images/hotel3.jpg" class="menu_image_link"/></a><br />Hotel name and place</li>
+        <li class="menu_image_li"><a href="hotel4.html"><img src="images/hotel4.jpg" class="menu_image_link"/></a><br />Hotel name and place</li>
+        <li class="menu_image_li"><a href="hotel5.html"><img src="images/hotel5.jpg" class="menu_image_link"/></a><br />Hotel name and place</li>
+    </ul>
+    <div style="clear:both">&nbsp;</div>
+</div>
+<div class="reservation">
+    <div class="gallery">
+        <div class="gallery_text">IMAGE GALLERY<span><a href="moreimages.html" class="moreimages">More Images</a></span></div>
+        <div>
+            <a href="images/himalaya.jpg"><img src="images/himalaya.jpg" class="gallery_image" /></a> 
+            <a href="images/railway.jpg"><img src="images/railway.jpg" class="gallery_image" /></a> 
+            <a href="images/tajmahal.jpg"><img src="images/tajmahal.jpg" class="gallery_image" /></a> 
+        </div>
+    </div>
+    <div class="regform">
+        <div class="regform_head">ONLINE RESERVATION</div>
+        <div><a href="otheracco.html" class="regform_text">View Other Government Accomodation</a></div>
+        <div class="checkin">
+        <form action="booking.php" method="post">
+        	<br />
+        	<input type="text" name="checkin" value="Check In" class="checkin_text"/>
+        	<a href="#"><img src="images/calender.jpg" /></a>&nbsp;
+            <input type="text" name="checkout" value="Check Out" class="checkin_text"/>
+            <a href="#"><img src="images/calender.jpg" /></a>
+            <br />
+            <select name="pricerange" class="checkin_price" >
+            	<option value="" style="display:none">Price Range</option>
+            	<option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="3000">3000</option>
+                <option value="4000">4000</option>
+            </select>&nbsp;&nbsp;
+            <select name="location" class="checkin_price">
+            	<option value="" style="display:none">Location</option>
+            	<option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+             </select> 
+             <br />
+             <select name="rooms" class="checkin_other">
+             	<option value="" style="display:none">Rooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <select name="adult" class="checkin_other">&nbsp;&nbsp;
+             	<option value="" style="display:none">Adult</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <select name="children" class="checkin_other">
+             	<option value="" style="display:none">Children</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+        </div>
+        <div class="book">
+        	<img src="images/booknow.jpg" class="booknow"/>
+            <br />
+            <input type="submit" class="booknow1" value="Book now" />
+        </div>
+        </form>       
+    </div>
+</div>
+<div style="clear:both">
+<div class="location">
+	<div class="promotion">
+    	<div class="promotion_text">PROMOTIONAL VIDEO</div>
+    	<div class="promotion_video"><a href="#"><img src="images/promotion.jpg" /></a></div>
+    </div>	
+    <div class="loc_info">
+    	<div class="loc_text">LOCATION INFORMATION</div>
+        <div class="loc_info1">
+        <div class="loc_img"><img src="images/loc_1.jpg" /></div>
+        <div class="loc_img_text">
+        	<b>LOCATION NAME</b>
+       		<p>asdsadasdasdasdsfjkafpahefpujlakdhflkjashdf</p>
+        </div>
+        </div>
+        <div class="loc_info1">
+        <div class="loc_img"><img src="images/loc_2.jpg" /></div>
+        <div class="loc_img_text">
+        	<b>LOCATION NAME</b>
+       		<p>asdsadasdasdasdsfjkafpahefpujlakdhflkjashdf</p>
+        </div>
+        </div>
+    </div>
+    
+</div>
+<div style="clear:both"></div>
+<div class="footer">
+	<ul class="footer1">
+    	<li><a href="index.html" class="footerlink" >Home</a></li>
+     	<li><a href="#" class="footerlink" >Site Map</a></li>
+        <li><a href="privacy.html" class="footerlink" >Privacy Policy</a></li>
+        <li><a href="contactus.html" class="footerlink1" >Contact Us</a></li>
+    </ul>
+</div>
+</div>
+</body>
+</html>
